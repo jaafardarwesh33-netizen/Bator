@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 10;
+    
+    /* جعل الخلفية والظل يعملان على النص */
+    background: linear-gradient(45deg, #efba0a, #fff); /* تدرج أزرق/أبيض */
+    -webkit-background-clip: text; /* قص الخلفية لتناسب شكل النص */
+    background-clip: text;
+    color: transparent; /* جعل لون النص شفافًا لتظهر الخلفية */
+
+    /* إضافة تأثير إطار بسيط (اختياري) */
+    text-shadow: 1px 1px 1px #000; /* ظل خفيف باللون الأسود */
+}
+
+/* تعديل بسيط للون عند المرور (اختياري) */
+/* 1. تنسيق القائمة غير المرتبة (ul) */
+nav ul {
+    /* أساس الترتيب الأفقي */
+    display: flex; 
+    /* إزالة النقاط الافتراضية للقائمة */
+    list-style: none;
+    /* تأكد من أن الروابط تظهر في الزاوية العلوية اليمنى (بالتنسيق مع header) */
+    position: absolute; /* تحديد الموضع يدوياً */
+    top: 35px; /* رفع القائمة قليلاً لتكون بمحاذاة الشعار */
+    right: 20px; /* دفعها إلى اليمين */
+    z-index: 10;
+}
+
+/* 2. تنسيق عناصر القائمة (li) */
+nav ul li {
+    /* إضافة مسافة بين كل عنصر (رابط) و الآخر */
+    margin-left: 30px; 
+}
+
+/* 3. تنسيق الروابط (a) */
+nav ul a {
+    /* جعل الخط يتبع نمط Bebas Neue */
+    font-family: "Bebas Neue", sans-serif;
+    /* إزالة التسطير الافتراضي للروابط */
+    text-decoration: none; 
+    /* لون النص أبيض ليبرز فوق الفيديو/الخلفية الداكنة */
+    color: #000000; 
+    /* جعل النص كبيراً وجريئاً */
+    font-size: 1.5rem; 
+    /* إضافة حركة انتقال سلسة للتفاعلات */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* تحويل كل الحروف إلى كبيرة */
+    text-transform: uppercase;
+     /* جعل الخلفية والظل يعملان على النص */
+    background: linear-gradient(45deg, #efba0a, #fff); /* تدرج أزرق/أبيض */
+    -webkit-background-clip: text; /* قص الخلفية لتناسب شكل النص */
+    background-clip: text;
+    color: transparent; /* جعل لون النص شفافًا لتظهر الخلفية */
+
+    /* إضافة تأثير إطار بسيط (اختياري) */
+    text-shadow: 0.01px 0.01px 0.01px #000; /* ظل خفيف باللون الأسود */
+}
+
+/* 4. تنسيق التفاعل (Hover Effect) - لإضافة لمسة ديناميكية */
+nav ul a:hover {
+    color: #efba0a; /* تغيير اللون إلى الأصفر/الذهبي الخاص بالشعار */
+    /* إضافة رفع بسيط يوحي بالحركة (مثل لاعب يتقدم) */
+    transform: translateY(-2px); 
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0.5;
+    z-index: 10;
+}
+.hero {
+  position: absolute;   /* يبقي النص ثابتًا حتى عند التمرير */
+  bottom: 10px;      /* المسافة من أسفل الصفحة */
+  left: 10px;        /* المسافة من يسار الصفحة */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 10;
+    
+    /* جعل الخلفية والظل يعملان على النص */
+    background: linear-gradient(45deg, #efba0a, #fff); /* تدرج أزرق/أبيض */
+    -webkit-background-clip: text; /* قص الخلفية لتناسب شكل النص */
+    background-clip: text;
+    color: transparent; /* جعل لون النص شفافًا لتظهر الخلفية */
+
+    /* إضافة تأثير إطار بسيط (اختياري) */
+    text-shadow: 1px 1px 1px #000; /* ظل خفيف باللون الأسود */
+}
+.d{
+    background-color: #efba0a;
+    z-index: 10;
+    overflow-x: hidden;
+    height: fit-content;
+
+
+}
+.container {
+  display: flex;
+  height: 70vh; /* ارتفاع كامل الشاشة */
+}
+
+.left, .right {
+  flex: 1; /* كل نصف يأخذ مساحة متساوية */
+  display: table-column;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  width: 2px;              /* سمك الخط */
+  background-color: black; /* لون الخط */
+}
+.first {
+    font-size: x-large;
+
+}
+.ready {
+font-size: xx-large;
+}
+.sleep {
+    /* *** التعديلات تبدأ هنا لـ .sleep *** */
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 8vw; /* حجم خط كبير يتناسب مع الشاشة */
+    white-space: nowrap; /* يمنع الكلمة من الانقسام */
+    
+    /* 1. تدوير النص بزاوية 90 درجة ليصبح أفقياً */
+    transform: rotate(-90deg);
+    
+    /* 2. لتثبيت النص في المركز على طول الخط الفاصل */
+    transform-origin: center center;
+    
+    /* جعل الخلفية والظل يعملان على النص */
+    background: linear-gradient(45deg, #000000, #333333); /* تدرج لوني للنص */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    /* *** التعديلات تنتهي هنا لـ .sleep *** */
+}
+
+.link {
+   /* جعل الخط يتبع نمط Bebas Neue */
+    font-family: "Bebas Neue", sans-serif;
+    /* إزالة التسطير الافتراضي للروابط */
+    text-decoration: underline; 
+    /* لون النص أبيض ليبرز فوق الفيديو/الخلفية الداكنة */
+    color: #000000; 
+    /* جعل النص كبيراً وجريئاً */
+    font-size: 1.5rem; 
+    /* إضافة حركة انتقال سلسة للتفاعلات */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* تحويل كل الحروف إلى كبيرة */
+    text-transform: uppercase;
+     /* جعل الخلفية والظل يعملان على النص */
+    background: linear-gradient(45deg, #efba0a, #fff); /* تدرج أزرق/أبيض */
+    -webkit-background-clip: text; /* قص الخلفية لتناسب شكل النص */
+    background-clip: text;
+    color: transparent; /* جعل لون النص شفافًا لتظهر الخلفية */
+
+    /* إضافة تأثير إطار بسيط (اختياري) */
+    text-shadow: 0.01px 0.01px 0.01px #000; /* ظل خفيف باللون الأسود */
+}
+.link:hover { 
+    transform: translateY(-3px) scale(1.05); /* زيادة طفيفة في الحركة */
+    
+}
+.f{
+    background-color: #efba0a;
+    z-index: 10;
+    overflow-x: hidden;
+    height: fit-content;
+
+
+}
+.bw{
+    height: auto;
+    width: 100%;
+}
+.line {
+  width: 100%;               /* يمتد على كامل الصفحة */
+  height: 2px;               /* سمك الخط */
+  background-color: black;   /* لون الخط */
+}
+.future {
+        /* *** التعديلات تبدأ هنا لـ .sleep *** */
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 6vw; /* حجم خط كبير يتناسب مع الشاشة */
+    white-space: nowrap; /* يمنع الكلمة من الانقسام */
+    
+
+    /* جعل الخلفية والظل يعملان على النص */
+    background: linear-gradient(45deg, #000000, #333333); /* تدرج لوني للنص */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    /* *** التعديلات تنتهي هنا لـ .sleep *** */
+}
+.unlock {
+       /* جعل الخط يتبع نمط Bebas Neue */
+    font-family: "Bebas Neue", sans-serif;
+    /* إزالة التسطير الافتراضي للروابط */
+    text-decoration: underline; 
+    /* لون النص أبيض ليبرز فوق الفيديو/الخلفية الداكنة */
+    color: #000000; 
+    /* جعل النص كبيراً وجريئاً */
+    font-size: 1.5rem; 
+    /* إضافة حركة انتقال سلسة للتفاعلات */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* تحويل كل الحروف إلى كبيرة */
+    text-transform: uppercase;
+     /* جعل الخلفية والظل يعملان على النص */
+    background: linear-gradient(45deg, #efba0a, #fff); /* تدرج أزرق/أبيض */
+    -webkit-background-clip: text; /* قص الخلفية لتناسب شكل النص */
+    background-clip: text;
+    color: transparent; /* جعل لون النص شفافًا لتظهر الخلفية */
+
+    /* إضافة تأثير إطار بسيط (اختياري) */
+    text-shadow: 0.01px 0.01px 0.01px #000; /* ظل خفيف باللون الأسود */
+
+}
+
+
